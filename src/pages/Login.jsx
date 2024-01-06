@@ -38,7 +38,7 @@ const Login = () => {
 
         const newData = { token: res?.token, ...res?.user };
         dispatch(UserLogin(newData));
-        window.location.replace("/");
+        // window.location.replace("/");
       }
       setIsSubmitting(false);
     } catch (error) {
